@@ -1,37 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "ad3567097078fa40fe2390992d22d7d50e08ce67f9046c09388374c1af0be3f4",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://api-au.6clicks.io/swagger/v1/swagger.json"
-  ],
   "id": "6clicks-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "6clicks MCP setup and connection checker",
-  "description": "Generate 6clicks MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare 6clicks for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-6clicks-mcp",
+  "sourceRevision": "2550d3cbbe176a639d2dcd7491a03bdd22a57d050abe1025b2c58d3c8b23d752",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://api-au.6clicks.io/swagger/v1/swagger.json"
+  ],
+  "utility": {
+    "problem": "Prepare 6clicks and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "6clicks",
   "appName": "6clicks",
-  "providerDocs": "https://api-au.6clicks.io/swagger/v1/swagger.json",
-  "providerWebsite": "https://www.6clicks.com/",
-  "authentication": {
-    "type": "token_exchange",
-    "requiredCredentialFields": [
-      "provider_exchange_credentials"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://knowledgebase.6clicks.com/6clicks-developer-api",
-    "tenantRequired": true,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-6clicks-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

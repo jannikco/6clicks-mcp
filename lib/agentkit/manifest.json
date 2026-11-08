@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-6clicks",
+      "description": "Connect AI agents to 6clicks using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-6clicks/SKILL.md": "7537f19961c2ca0dff8e6110fe8266694b9ef44103e211e174d6edf5ed8469f7"
+  }
+}
